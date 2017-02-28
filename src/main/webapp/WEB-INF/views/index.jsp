@@ -1,22 +1,27 @@
+<%@ page isELIgnored="false" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<spring:url var="css" value="/resources/css"/>
+<spring:url var="img" value="/resources/img"/>
+<spring:url var="js" value="/resources/js"/>
 <html>
 <head>
 		
 		<!-- Website Title & Description for Search Engine purposes -->
-		<title>Code a Responsive Website with Twitter Bootstrap 3</title>
-		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+		<title>ONLINE BAKERY</title>
+		<meta name="description" content="online bakery">
 		
 		<!-- Mobile viewport optimized -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="${css}/bootstrap.min.css" rel="stylesheet">
+		<link href="${css}/bootstrap-glyphicons.css" rel="stylesheet">
 		
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="includes/css/styles.css">
+		<link rel="stylesheet" href="${css}/styles.css">
 		
 		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		<script src="${js}/modernizr-2.6.2.min.js"></script>
 		
 	</head>
 	<body>
@@ -41,14 +46,21 @@
 								<a href="#">Home</a>
 							</li>
 							
-							<li class="active">
+							<li >
 								<a href="#">Product</a>
 							</li>
-							<li class="active">
+							<li >
 								<a href="#">About</a>
 							</li>
-						<li class="active">
+						<li>
 								<a href="#">Contact</a>
+							</li>
+							<li>
+							<a href="/onlinebakery/login">LOGIN</a>						
+							</li>
+							
+							<li>
+							<a href="/onlinebakery/Register">REGISTER</a>						
 							</li>				
 							
 							</ul>
@@ -84,8 +96,7 @@
 					
 					<div class="item" id="slide3">
 						<div class="carousel-caption">
-							
-						</div><!-- end carousel-caption-->
+													</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 				</div><!-- carousel-inner -->
 				
@@ -94,6 +105,28 @@
 				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
 			
 			</div><!-- end myCarousel -->
+			
+			<div class="container">
+  <h2>PRODUCTS</h2>
+  <table class="table table-bordered">
+    
+      <tr>
+        <td align="center"><a href="/onlinebakery/cakes">
+<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
+</a></td>
+        <td align="center"><a href="cakes.jsp">
+<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
+</a></td>
+<td align="center"><a href="cakes.jsp">
+<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
+</a></td>
+      </tr>
+    </table>
+  
+</div>           
+  
+</div>
+			
 			
 </body><!-- All Javascript at the bottom of the page for faster page loading -->
 		
@@ -104,8 +137,8 @@
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 	
 	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="${js}/bootstrap.min.js"></script>
 	
 	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+	<script src="${js}/script.js"></script>
 </html>
