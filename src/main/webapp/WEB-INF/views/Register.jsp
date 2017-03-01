@@ -5,22 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>LOGIN</title>
-<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="includes/css/styles.css">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
 
+<%@include file="el.jsp" %>
 </head>
 <body>
+<%@include file="navbar.jsp" %>
+
 <div class="container">
 
       <form class="form-signin">
@@ -39,19 +29,7 @@
 
     </div> <!-- /container -->
     
-    
+ <%@include file="footer.jsp" %>    
 </body>
-<!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+
 </html>

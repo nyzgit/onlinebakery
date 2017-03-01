@@ -23,6 +23,7 @@
 		<!-- Include Modernizr in the head, before any other Javascript -->
 		<script src="${js}/modernizr-2.6.2.min.js"></script>
 		
+		<link href="${css}/footer.css" rel="stylesheet">
 	</head>
 	<body>
 	
@@ -38,7 +39,7 @@
 						<span class="icon-bar"></span>
 					</button>
 				
-					<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+					<a class="navbar-brand" href="/onlinebakery/index"><img src="images/logo.png" alt="Your Logo"></a>
 					
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul class="nav navbar-nav">
@@ -106,26 +107,70 @@
 			
 			</div><!-- end myCarousel -->
 			
-			<div class="container">
-  <h2>PRODUCTS</h2>
-  <table class="table table-bordered">
-    
-      <tr>
-        <td align="center"><a href="/onlinebakery/cakes">
-<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
-</a></td>
-        <td align="center"><a href="cakes.jsp">
-<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
-</a></td>
-<td align="center"><a href="cakes.jsp">
-<img src="${img}/c1.jpg" alt="cakes" height="200" width="200">>
-</a></td>
-      </tr>
-    </table>
-  
-</div>           
-  
+			
+ 
+ <div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>More Features</h2>
+					<p class="lead">Cornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+			
+			
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Markup with HTML5</h3>
+						</div><!-- end panel-heading -->
+						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						
+						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						
+						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Markup with HTML5</h3>
+						</div><!-- end panel-heading -->
+						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						
+						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						
+						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			
+				
+				<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Markup with HTML5</h3>
+						</div><!-- end panel-heading -->
+						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						
+						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						
+						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+						</div><!-- end features -->
+ 
 </div>
+</div>
+</div>  
+<footer class="footer">
+      <div class="container">
+        <p align="center" class="text-muted">copyright @nyz </p>
+      </div>
+    </footer>  
+
+
 			
 			
 </body><!-- All Javascript at the bottom of the page for faster page loading -->

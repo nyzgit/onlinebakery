@@ -8,12 +8,12 @@
 						<span class="icon-bar"></span>
 					</button>
 				
-					<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+					<a class="navbar-brand" href="/onlinebakery/index"><img src="images/logo.png" alt="Your Logo"></a>
 					
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="index.jsp">Home</a>
+								<a href="/onlinebakery/index">Home</a>
 							</li>
 							
 							<li >
@@ -26,11 +26,11 @@
 								<a href="#">Contact</a>
 							</li>
 							<li>
-							<a href="login.jsp">LOGIN</a>						
+							<a href="/onlinebakery/login">LOGIN</a>						
 							</li>
 							
 							<li>
-							<a href="Register.jsp">REGISTER</a>						
+							<a href="/onlinebakery/Register">REGISTER</a>						
 							</li>				
 							
 							</ul>
