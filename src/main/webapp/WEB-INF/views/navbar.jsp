@@ -17,7 +17,7 @@
 							</li>
 							
 							<li >
-								<a href="#">Product</a>
+								<a href="/onlinebakery/products">Product</a>
 							</li>
 							<li >
 								<a href="#">About</a>

@@ -1,8 +1,3 @@
-<%@ page isELIgnored="false" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<spring:url var="css" value="/resources/css"/>
-<spring:url var="img" value="/resources/img"/>
-<spring:url var="js" value="/resources/js"/>
 <html>
 <head>
 		
@@ -13,17 +8,8 @@
 		<!-- Mobile viewport optimized -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
-		<!-- Bootstrap CSS -->
-		<link href="${css}/bootstrap.min.css" rel="stylesheet">
-		<link href="${css}/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="${css}/styles.css">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="${js}/modernizr-2.6.2.min.js"></script>
-		
-		<link href="${css}/footer.css" rel="stylesheet">
+		<%@include file="el.jsp" %>
+
 	</head>
 	<body>
 	
@@ -48,7 +34,7 @@
 							</li>
 							
 							<li >
-								<a href="#">Product</a>
+								<a href="/onlinebakery/products">Product</a>
 							</li>
 							<li >
 								<a href="#">About</a>
@@ -83,22 +69,26 @@
 			
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
+					
 					<div class="item active" id="slide1">
 						<div class="carousel-caption">
-							
+						
+						<p>HELLO</p>	
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 					
 					<div class="item" id="slide2">
 						<div class="carousel-caption">
-							
+							<p>HELLO2</p>
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 					
 					<div class="item" id="slide3">
 						<div class="carousel-caption">
-													</div><!-- end carousel-caption-->
+						<p>HELLO3</p>
+						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
+				
 				</div><!-- carousel-inner -->
 				
 				<!-- Controls -->
@@ -112,7 +102,7 @@
  <div class="row" id="featuresHeading">
 				<div class="col-12">
 					<h2>More Features</h2>
-					<p class="lead">Cornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
+					<p class="lead">hhhhCornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
 				</div><!-- end col-12 -->
 			</div><!-- end featuresHeading -->
 			
@@ -123,7 +113,7 @@
 						<div class="panel-heading">
 							<h3 class="panel-title">Markup with HTML5</h3>
 						</div><!-- end panel-heading -->
-						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
 						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
 						
@@ -137,7 +127,7 @@
 						<div class="panel-heading">
 							<h3 class="panel-title">Markup with HTML5</h3>
 						</div><!-- end panel-heading -->
-						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
 						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
 						
@@ -152,7 +142,7 @@
 						<div class="panel-heading">
 							<h3 class="panel-title">Markup with HTML5</h3>
 						</div><!-- end panel-heading -->
-						<img src="${img}/c1.jpg" alt="cakes" height="200" width="200" class="img-circle">
+						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
 						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
 						
@@ -164,26 +154,5 @@
 </div>
 </div>
 </div>  
-<footer class="footer">
-      <div class="container">
-        <p align="center" class="text-muted">copyright @nyz </p>
-      </div>
-    </footer>  
-
-
-			
-			
-</body><!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="${js}/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="${js}/script.js"></script>
+<%@include file="footer.jsp" %></body>
 </html>
