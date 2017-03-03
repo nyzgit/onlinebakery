@@ -52,10 +52,11 @@ product = new Product();
 	prod.add(product);
 
 }*/
+
 @SuppressWarnings("unchecked")
 public List<Product> list() {
 	
-prod = (List<Product>)sessionFactory.openSession().createQuery("FROM Product").list();
+prod = (List<Product>)sessionFactory.openSession().createQuery("from Product").list();
 for(Product pro : prod)
 {
 	System.out.println(pro.getName());

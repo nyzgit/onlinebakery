@@ -25,7 +25,7 @@
 						<span class="icon-bar"></span>
 					</button>
 				
-					<a class="navbar-brand" href="/onlinebakery/index"><img src="images/logo.png" alt="Your Logo"></a>
+					<a class="navbar-brand" href="/onlinebakery/index"><img src="${img}/1.jpg" alt="cakes" height="50" width="50" class="img-circle"></a>
 					
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul class="nav navbar-nav">
@@ -102,7 +102,7 @@
  <div class="row" id="featuresHeading">
 				<div class="col-12">
 					<h2>More Features</h2>
-					<p class="lead">hhhhCornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
+					
 				</div><!-- end col-12 -->
 			</div><!-- end featuresHeading -->
 			
@@ -111,11 +111,11 @@
 				<div class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
-							<h3 class="panel-title">Markup with HTML5</h3>
+							<h3 class="panel-title">CAKES</h3>
 						</div><!-- end panel-heading -->
 						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
-						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						<p>CAKES CAKES</p>
 						
 						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
 					</div><!-- end panel -->
@@ -125,34 +125,31 @@
 				<div class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
-							<h3 class="panel-title">Markup with HTML5</h3>
+							<h3 class="panel-title">CAKES</h3>
 						</div><!-- end panel-heading -->
 						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
-						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						<p>CAKES CAKES</p>
 						
 						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
 					</div><!-- end panel -->
 				</div><!-- end feature -->
-			
-				
 				<div class="row" id="features">
 				<div class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
-							<h3 class="panel-title">Markup with HTML5</h3>
+							<h3 class="panel-title">CAKES</h3>
 						</div><!-- end panel-heading -->
 						<img src="${img}/1.jpg" alt="cakes" height="200" width="200" class="img-circle">
 						
-						<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+						<p>CAKES CAKES</p>
 						
 						<a href="/onlinebakery/cakes" class="btn btn-warning btn-block">Click To Buy</a>
 					</div><!-- end panel -->
-				</div><!-- end feature -->
-						</div><!-- end features -->
- 
+				</div><!-- end feature --> 
 </div>
 </div>
-</div>  
+</div> 
+</div> 
 <%@include file="footer.jsp" %></body>
 </html>

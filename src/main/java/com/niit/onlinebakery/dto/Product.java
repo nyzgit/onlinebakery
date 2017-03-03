@@ -11,7 +11,6 @@ public class Product {
 	
 	
 
-private int id;
 public int getId() {
 	return id;
 }
@@ -54,6 +53,7 @@ public String toString() {
 //private fields
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
+private int id;
 private String name;
 private String description;
 

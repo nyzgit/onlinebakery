@@ -8,7 +8,7 @@
 						<span class="icon-bar"></span>
 					</button>
 				
-					<a class="navbar-brand" href="/onlinebakery/index"><img src="images/logo.png" alt="Your Logo"></a>
+					<a class="navbar-brand" href="/onlinebakery/index"><img src="${img}/1.jpg" alt="cakes" height="50" width="50" class="img-circle"></a>
 					
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul class="nav navbar-nav">
