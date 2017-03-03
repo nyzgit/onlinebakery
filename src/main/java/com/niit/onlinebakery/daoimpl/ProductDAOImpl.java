@@ -64,6 +64,17 @@ for(Product pro : prod)
 return prod;
 }
 
+public Product getProduct(int id) {
+	
+	prod = (List<Product>)sessionFactory.openSession().createQuery("FROM Product").list();
+	for(Product pro : prod)
+	{
+		if(pro.getId() == id)
+		return pro;
+	}
+	return null;
+	}
+
 	/*public List<Product> list() {
 		// TODO Auto-generated method stub
 		return prod;

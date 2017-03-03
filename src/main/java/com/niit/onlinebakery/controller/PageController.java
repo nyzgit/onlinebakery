@@ -2,6 +2,7 @@ package com.niit.onlinebakery.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -41,6 +42,7 @@ public class PageController {
 		
 	}
 	
+	
 	@RequestMapping(value={"/cakes","/Cakes"})
 	public ModelAndView cakes(){
 		
@@ -55,7 +57,22 @@ public class PageController {
 			ModelAndView mv=new ModelAndView("products");
 			//mv.addObject("greeting", "Welcome to Spring Web MVC"); 
 			return mv;
-		
+
+		}
+			/*Url Mapping for single page @RequestMapping(value={"/show/{id}/product"}) 
+			 * based on product id  
+			 * details(@PathVariable("id")int id) method for passing value for fetching 
+			 * single product*/
+			@RequestMapping(value={"/show/{id}/product"})
+			public ModelAndView details(@PathVariable("id")int id)
+			{
+				ModelAndView mv =new ModelAndView("details");
+				mv.addObject("product",productDAO.getProduct(id));
+				return mv;
+			}
+			
 
 }
-}
+		
+		
+
